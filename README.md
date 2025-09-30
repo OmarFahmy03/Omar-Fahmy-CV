@@ -8,7 +8,7 @@ Welcome to my personal portfolio! This is where I showcase my work, projects, an
 
 You can view the live demo of my portfolio here:
 
-[🔗 Live Demo](https://omar-fahmy-cv.netlify.app/) <!-- Replace with your actual live demo URL -->
+[🔗 Live Demo](https://omar-fahmy.netlify.app/) <!-- Replace with your actual live demo URL -->
 
 ---
 
