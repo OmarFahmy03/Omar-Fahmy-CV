@@ -14,21 +14,37 @@ interface Project {
 // projects data
 const allProjects: Project[] = [
   {
-    src: "/srgan.webp",
-    title: "SRGAN Image Enhancement",
-    description: "Image enhancement web app using a trained SRGAN model upscaling low-res images",
-    link: "https://gans-model.netlify.app/",
-    code: "https://github.com/zeiadsalhin/GANs-model",
-    type: "AI",
-  },
-  {
-    src: "/chattok_gaming.webp",
+    src: "/Chattok-New.webp",
     title: "Chattok Gaming",
     description: "Unity Tiktok Games Designed, Built, published in cooperation with developers",
     link: "https://mory-racing.netlify.app",
     code: "https://github.com/zeiadsalhin/mory-racing",
     type: "Games",
   },
+  {
+    src: "/FreeShooter.webp",
+    title: "Free Shooter",
+    description: "Unity Shooter Game Designed, Built, published by me, using OpenCV Library to detect color range to detect Input.",
+    link: "https://www.youtube.com/watch?v=sBCgYurznuU&t=1s",
+    code: "",
+    type: "Games",
+  },
+  {
+    src: "/BlockLogic.webp",
+    title: "Block Logic",
+    description: "Taking Inspiration from Block Blast, Unity Game Designed, Built, published by me; Game has actual infinite levels.",
+    link: "https://www.youtube.com/watch?v=UCg21rH0okI",
+    code: "",
+    type: "Games",
+  },
+  {
+    src: "/SRGAN (2).webp",
+    title: "SRGAN Image Enhancement",
+    description: "Image enhancement web app using a trained SRGAN model upscaling low-res images",
+    link: "https://gans-model.netlify.app/",
+    code: "https://github.com/zeiadsalhin/GANs-model",
+    type: "AI",
+  }
 ];
 
 const filterTypes = ["All", "Games", "AI"] as const;
@@ -155,24 +171,42 @@ const Projects: React.FC = () => {
               <p className="text-sm text-[#B6B6B6] mb-4">{project.description}</p>
               
               <div className="Buttons flex gap-2">
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 bg-blue-500 hover:bg-[#07c7c4]/80 text-white rounded hover:text-white hover:outline-[#08D9D6] outline-1 transition-all duration-300"
-              >
-                View Project
-              </a>
-              <a
-                href={project.code}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-3.5 py-2 bg-[#07c7c4]/20 text-white rounded hover:bg-[#07c7c4]/40 transition-all duration-300"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-github-icon lucide-github hover:opacity-50 transform transition duration-300 inline-block"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-                <span className='ms-1'>Source Code</span>
-              </a>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-blue-500 hover:bg-[#07c7c4]/80 text-white rounded hover:text-white hover:outline-[#08D9D6] outline-1 transition-all duration-300"
+                >
+                  View Project
+                </a>
+
+                {project.code && (
+                  <a
+                    href={project.code}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3.5 py-2 bg-[#07c7c4]/20 text-white rounded hover:bg-[#07c7c4]/40 transition-all duration-300"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="lucide lucide-github-icon lucide-github hover:opacity-50 transform transition duration-300 inline-block"
+                    >
+                      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                      <path d="M9 18c-4.51 2-5-2-7-2"/>
+                    </svg>
+                    <span className='ms-1'>Source Code</span>
+                  </a>
+                )}
               </div>
+
             </div>
           ))}
         </div>

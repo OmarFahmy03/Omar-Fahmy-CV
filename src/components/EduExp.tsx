@@ -39,38 +39,33 @@ const experiences = [
       "Implemented responsive UIs, integrated REST APIs and Firebase.",
       "Optimized performance and ensured smooth UX on Android and iOS."
     ]
-  },
-  // {
-  //   title: "E-commerce Store App",
-  //   period: "04/2025",
-  //   highlights: [
-  //     "React + Ant Design UI with JWT, Zustand for state",
-  //     "Includes Admin Dashboard and secure checkout",
-  //     "Optimized performance and UX for mobile/desktop"
-  //   ]
-  // },
-  // {
-  //   title: "Live Interactive Games App",
-  //   period: "08/2024",
-  //   highlights: [
-  //     "Nuxt, Supabase, Vuetify & Tailwind for TikTok live games",
-  //     "Multi-language real-time gameplay with SSR"
-  //   ]
-  // },
-  // {
-  //   title: "Online Courses and Portfolio App",
-  //   period: "07/2024",
-  //   highlights: [
-  //     "Unified educational + portfolio app",
-  //     "Nuxt, Vuetify, Supabase, Tailwind stack",
-  //     "Focused on intuitive navigation and scalability"
-  //   ]
-  // }
+  }
 ];
 
+// ✅ New education data array
+const education = [
+  {
+    period: "2021 – 2025",
+    degree: "B.Sc. Computer Science",
+    institution: "Helwan University – Egypt",
+    details: [
+      "Bachelor of Science in Computer science & Mathematics",
+      "Graduation Project: AI-Powered GANs Super resolution model",
+      "Key Courses: Data Structures, DBMS, Software Engineering"
+    ]
+  },
+  {
+    period: "2024",
+    degree: "App Development (Flutter)",
+    institution: "Information Technology Institute (ITI) – Egypt",
+    details: [
+      "Studied cross-platform mobile app development using Flutter and Dart",
+      "Learned Firebase integration, REST APIs, and UI/UX design",
+      "Built small apps as practice projects"
+    ]
+  }
+];
 
-// This component displays the education and experience sections of a resume
-// It allows users to toggle between the two sections using buttons
 const EduExp = () => {
   const [activeTab, setActiveTab] = useState("education");
 
@@ -81,7 +76,7 @@ const EduExp = () => {
           className={`px-4 py-2 rounded-full font-semibold transition-all ${
             activeTab === "education"
               ? "bg-blue-500/80 text-white"
-              : "bg-blue-950 text-[#EAEAEA] border border-[#08D9D6]"
+              : "bg-blue-950 text-[#EAEAEA] border border-[#08D9D6]"`
           }`}
           onClick={() => setActiveTab("education")}
         >
@@ -91,7 +86,7 @@ const EduExp = () => {
           className={`px-4 py-2 rounded-full font-semibold transition-all ${
             activeTab === "experience"
               ? "bg-blue-500/80 text-white"
-              : "bg-blue-950 text-[#EAEAEA] border border-[#08D9D6]"
+              : "bg-blue-950 text-[#EAEAEA] border border-[#08D9D6]"`
           }`}
           onClick={() => setActiveTab("experience")}
         >
@@ -109,23 +104,28 @@ const EduExp = () => {
         >
           {activeTab === "education" && (
             <div className="space-y-8">
-              <div className="flex flex-col md:flex-row items-start md:items-center">
-                <div className="flex items-center space-x-4">
-                  <div className="w-2 h-10 bg-blue-50/60"></div>
-                  <p className="text-lg md:text-xl me-12 text-[#B6B6B6]">2021 – 2025</p>
+              {education.map((edu, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col md:flex-row items-start md:items-center"
+                >
+                  <div className="flex items-center space-x-4">
+                    <div className="w-2 h-10 bg-blue-50/60"></div>
+                    <p className="text-lg md:text-xl me-12 text-[#B6B6B6]">{edu.period}</p>
+                  </div>
+                  <div className="md:ml-10 mt-4 md:mt-0">
+                    <h2 className="text-2xl md:text-3xl font-semibold text-blue-50/90">
+                      {edu.degree}
+                    </h2>
+                    <p className="text-xl font-light text-[#08D9D6]/80">{edu.institution}</p>
+                    <ul className="list-disc ml-5 mt-4 text-md text-[#B6B6B6] space-y-1">
+                      {edu.details.map((point, i) => (
+                        <li key={i}>{point}</li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-                <div className="md:ml-10 mt-4 md:mt-0">
-                  <h2 className="text-2xl md:text-3xl font-semibold text-blue-50/90">
-                    B.Sc. Computer Science
-                  </h2>
-                  <p className="text-xl font-light text-[#08D9D6]/80">Helwan University – Egypt</p>
-                  <ul className="list-disc ml-5 mt-4 text-md text-[#B6B6B6] space-y-1">
-                    <li>Bachelor of Science in Computer science & Mathematics</li>
-                    <li>Graduation Project: AI-Powered GANs Super resolution model</li>
-                    <li>Key Courses: Data Structures, DBMS, Software Engineering</li>
-                  </ul>
-                </div>
-              </div>
+              ))}
             </div>
           )}
 
@@ -137,11 +137,11 @@ const EduExp = () => {
                   className="flex flex-col md:flex-row items-start md:items-center"
                 >
                   <div className="flex items-center space-x-4">
-                    <div className="w-2 h-10 bg-bg-blue-50/60"></div>
+                    <div className="w-2 h-10 bg-blue-50/60"></div>
                     <p className="text-lg md:text-xl min-w-[10rem] text-[#B6B6B6]">{exp.period}</p>
                   </div>
                   <div className="md:ml-10 mt-4 md:mt-0">
-                    <h2 className="text-2xl md:text-3xl font-semibold text-bg-blue-50/90">
+                    <h2 className="text-2xl md:text-3xl font-semibold text-blue-50/90">
                       {exp.title}
                     </h2>
                     {exp.company && (
