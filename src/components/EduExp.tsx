@@ -7,9 +7,9 @@ const experiences = [
     company: "USA - Indiana",
     period: "2024 – Current",
     highlights: [
-      "Currently I’m working with growing company.",
-      "We have a great idea to convert streaming platforms like tiktok to completely intractable game.",
-      "Using backend and get information from tiktok api and likes and so on."
+      "Currently I’m working with a growing company.",
+      "We have a great idea to convert streaming platforms like TikTok into completely interactive games.",
+      "Using backend and retrieving information from TikTok API such as likes and engagement."
     ]
   },
   {
@@ -17,8 +17,8 @@ const experiences = [
     company: "El Maadi",
     period: "2023 - 2024",
     highlights: [
-      "I Have worked as data typist in covo connect in Egypy-el-maadi.",
-      "I have learned so much from such experience as I can reach average 58 WPM.",
+      "I have worked as a data typist at Covo Connect in Egypt - El Maadi.",
+      "I have learned so much from this experience, reaching an average of 58 WPM."
     ]
   },
   {
@@ -26,8 +26,8 @@ const experiences = [
     company: "Remote Job",
     period: "2022 - Current",
     highlights: [
-      "With more than 3 Years experience in this field I have mastered how to use unity",
-      "I have worked in many solo projects and as a team with a lot of people all over the world."
+      "With more than 3 years of experience in this field, I have mastered Unity.",
+      "I have worked on many solo projects and as part of a team with people all over the world."
     ]
   },
   {
@@ -42,16 +42,15 @@ const experiences = [
   }
 ];
 
-// ✅ New education data array
 const education = [
   {
     period: "2021 – 2025",
     degree: "B.Sc. Computer Science",
     institution: "Helwan University – Egypt",
     details: [
-      "Bachelor of Science in Computer science & Mathematics",
-      "Graduation Project: AI-Powered GANs Super resolution model",
-      "Key Courses: Data Structures, DBMS, Software Engineering"
+      "Bachelor of Science in Computer Science & Mathematics.",
+      "Graduation Project: AI-Powered GANs Super Resolution Model.",
+      "Key Courses: Data Structures, DBMS, Software Engineering."
     ]
   },
   {
@@ -59,9 +58,9 @@ const education = [
     degree: "App Development (Flutter)",
     institution: "Information Technology Institute (ITI) – Egypt",
     details: [
-      "Studied cross-platform mobile app development using Flutter and Dart",
-      "Learned Firebase integration, REST APIs, and UI/UX design",
-      "Built small apps as practice projects"
+      "Studied cross-platform mobile app development using Flutter and Dart.",
+      "Learned Firebase integration, REST APIs, and UI/UX design.",
+      "Built small apps as practice projects."
     ]
   }
 ];
@@ -76,7 +75,7 @@ const EduExp = () => {
           className={`px-4 py-2 rounded-full font-semibold transition-all ${
             activeTab === "education"
               ? "bg-blue-500/80 text-white"
-              : "bg-blue-950 text-[#EAEAEA] border border-[#08D9D6]"`
+              : "bg-blue-950 text-[#EAEAEA] border border-[#08D9D6]"
           }`}
           onClick={() => setActiveTab("education")}
         >
@@ -86,7 +85,7 @@ const EduExp = () => {
           className={`px-4 py-2 rounded-full font-semibold transition-all ${
             activeTab === "experience"
               ? "bg-blue-500/80 text-white"
-              : "bg-blue-950 text-[#EAEAEA] border border-[#08D9D6]"`
+              : "bg-blue-950 text-[#EAEAEA] border border-[#08D9D6]"
           }`}
           onClick={() => setActiveTab("experience")}
         >
@@ -111,13 +110,17 @@ const EduExp = () => {
                 >
                   <div className="flex items-center space-x-4">
                     <div className="w-2 h-10 bg-blue-50/60"></div>
-                    <p className="text-lg md:text-xl me-12 text-[#B6B6B6]">{edu.period}</p>
+                    <p className="text-lg md:text-xl me-12 text-[#B6B6B6]">
+                      {edu.period}
+                    </p>
                   </div>
                   <div className="md:ml-10 mt-4 md:mt-0">
                     <h2 className="text-2xl md:text-3xl font-semibold text-blue-50/90">
                       {edu.degree}
                     </h2>
-                    <p className="text-xl font-light text-[#08D9D6]/80">{edu.institution}</p>
+                    <p className="text-xl font-light text-[#08D9D6]/80">
+                      {edu.institution}
+                    </p>
                     <ul className="list-disc ml-5 mt-4 text-md text-[#B6B6B6] space-y-1">
                       {edu.details.map((point, i) => (
                         <li key={i}>{point}</li>
@@ -138,14 +141,18 @@ const EduExp = () => {
                 >
                   <div className="flex items-center space-x-4">
                     <div className="w-2 h-10 bg-blue-50/60"></div>
-                    <p className="text-lg md:text-xl min-w-[10rem] text-[#B6B6B6]">{exp.period}</p>
+                    <p className="text-lg md:text-xl min-w-[10rem] text-[#B6B6B6]">
+                      {exp.period}
+                    </p>
                   </div>
                   <div className="md:ml-10 mt-4 md:mt-0">
                     <h2 className="text-2xl md:text-3xl font-semibold text-blue-50/90">
                       {exp.title}
                     </h2>
                     {exp.company && (
-                      <p className="text-xl font-light text-[#08D9D6]/80">{exp.company}</p>
+                      <p className="text-xl font-light text-[#08D9D6]/80">
+                        {exp.company}
+                      </p>
                     )}
                     <ul className="list-disc ml-5 mt-4 text-md text-[#B6B6B6] space-y-1">
                       {exp.highlights.map((point, i) => (
