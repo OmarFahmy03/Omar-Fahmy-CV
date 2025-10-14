@@ -30,6 +30,14 @@ const allProjects: Project[] = [
     type: "Games",
   },
   {
+    src: "/DeserRun.webp",
+    title: "Deser Run",
+    description: "Endless Runner Game Developed using Unity, Taking inspiration from Arabic Culture Game Designed, Built, published by me",
+    link: "https://play.google.com/store/apps/details?id=com.PyramidCodeStudio.DesertRun",
+    code: "",
+    type: "Games",
+  },
+  {
     src: "/BlockLogic.webp",
     title: "Block Logic",
     description: "Taking Inspiration from Block Blast, Unity Game Designed, Built, published by me; Game has actual infinite levels.",
