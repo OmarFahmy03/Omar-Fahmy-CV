@@ -8,7 +8,7 @@ interface Project {
   description: string;
   link: string;
   code: string;
-  type: "Games" | "AI";
+  type: "Games" | "AI" | "Applications";
 };
 
 // projects data
@@ -38,6 +38,14 @@ const allProjects: Project[] = [
     type: "Games",
   },
   {
+    src: "/WeatherApp.webp",
+    title: "Weather App",
+    description: "A weather forecasting web application that provides real-time weather data and forecasts for any location worldwide.",
+    link: "",
+    code: "https://github.com/OmarFahmy03/weather_flutter_App",
+    type: "Applications",
+  },
+  {
     src: "/BlockLogic.webp",
     title: "Block Logic",
     description: "Taking Inspiration from Block Blast, Unity Game Designed, Built, published by me; Game has actual infinite levels.",
@@ -46,16 +54,32 @@ const allProjects: Project[] = [
     type: "Games",
   },
   {
+    src: "/todoApp.webp",
+    title: "ToDo App",
+    description: "A simple and intuitive ToDo application to help users manage their tasks efficiently with features like adding, editing, and deleting tasks.",
+    link: "",
+    code: "https://github.com/OmarFahmy03/todo-app-flutter",
+    type: "Applications",
+  },
+  {
+    src: "/QuizApp.webp",
+    title: "Quiz App",
+    description: "A fun and interactive quiz application that tests users' knowledge across various topics with multiple-choice questions and instant feedback.",
+    link: "",
+    code: "https://github.com/OmarFahmy03/QuizApp/tree/master",
+    type: "Applications",
+  },
+  {
     src: "/SRGAN (2).webp",
     title: "SRGAN Image Enhancement",
     description: "Image enhancement web app using a trained SRGAN model upscaling low-res images",
     link: "https://gans-model.netlify.app/",
-    code: "https://github.com/zeiadsalhin/GANs-model",
+    code: "https://github.com/OmarFahmy03/Final-Year-Project",
     type: "AI",
   }
 ];
 
-const filterTypes = ["All", "Games", "AI"] as const;
+const filterTypes = ["All", "Games", "AI", "Applications"] as const;
 
 // Projects component
 // This component displays a list of projects with filtering options and a horizontal scroll feature.
