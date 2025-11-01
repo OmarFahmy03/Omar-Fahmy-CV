@@ -22,6 +22,14 @@ const allProjects: Project[] = [
     type: "Games",
   },
   {
+    src: "/Silent Scream.webp",
+    title: "Silent Scream",
+    description: "Unity3D atmospheric horror game Designed, Built, published by me. originally for Scream Jam 2025",
+    link: "https://pyramid-code-studio.itch.io/silent-scream",
+    code: "https://github.com/OmarFahmy03/Silent-Scream",
+    type: "Games",
+  },
+  {
     src: "/FreeShooter.webp",
     title: "Free Shooter",
     description: "Unity Shooter Game Designed, Built, published by me, using OpenCV Library to detect color range to detect Input.",
