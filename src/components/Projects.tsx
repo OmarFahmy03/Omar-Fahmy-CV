@@ -17,8 +17,8 @@ const allProjects: Project[] = [
     src: "/Chattok-New.webp",
     title: "Chattok Gaming",
     description: "Unity Tiktok Games Designed, Built, published in cooperation with developers",
-    link: "https://mory-racing.netlify.app",
-    code: "https://github.com/zeiadsalhin/mory-racing",
+    link: "https://chattokgaming.com/",
+    code: "",
     type: "Games",
   },
   {
