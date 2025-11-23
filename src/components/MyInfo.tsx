@@ -38,7 +38,7 @@ export default function MyInfo() {
             A Cross-Platform App & Game Developer Specialized in Game Development
           </h2>
           <p className="text-lg md:text-xl font-sans leading-relaxed max-w-4xl text-[#B6B6B6]">
-            I’m a Creative and skilled developer with 3+ years of experience in game and mobile app development.
+            I’m a Creative and skilled developer with 5+ years of experience in game and mobile app development.
             Proficient in Unity, Flutter, Dart, and backend integration using APIs and Firebase.
             Currently building interactive experiences by connecting games with platforms like TikTok.
             A reliable team player with strong problem-solving skills and a passion for innovation.

@@ -46,6 +46,14 @@ const allProjects: Project[] = [
     type: "Games",
   },
   {
+    src: "/DancingPose.webp",
+    title: "Dancing Pose",
+    description: "Taking advantage from Mediapipe Pose Estimation, Unity Dance Game Designed, Built, published by me",
+    link: "https://youtu.be/VOatQutdK3E",
+    code: "",
+    type: "Games",
+  },
+  {
     src: "/WeatherApp.webp",
     title: "Weather App",
     description: "A weather forecasting web application that provides real-time weather data and forecasts for any location worldwide.",

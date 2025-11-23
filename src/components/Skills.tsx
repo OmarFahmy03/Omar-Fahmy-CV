@@ -22,6 +22,7 @@ export default function Skills(): JSX.Element {
     { name: 'Firebase', icon: '/firebase.svg', progress: 'w-85' },
     { name: 'GitHub', icon: '/github.svg', progress: 'w-95' },
     { name: 'Restful API', icon: '/api.svg', progress: 'w-75' },
+    { name: 'Blender', icon: '/Blender.svg', progress: 'w-80' },
   ];
 
   return (
