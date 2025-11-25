@@ -78,9 +78,6 @@ const allProjects: Project[] = [
     type: "Applications",
   },
   {
-    src: "/PoseEstimationApp.webp",
-  }
-  {
     src: "/QuizApp.webp",
     title: "Quiz App",
     description: "A fun and interactive quiz application that tests users' knowledge across various topics with multiple-choice questions and instant feedback.",
