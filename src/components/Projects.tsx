@@ -39,7 +39,7 @@ const allProjects: Project[] = [
   },
   {
     src: "/DeserRun.webp",
-    title: "Deser Run",
+    title: "Desert Run",
     description: "Endless Runner Game Developed using Unity, Taking inspiration from Arabic Culture Game Designed, Built, published by me",
     link: "https://play.google.com/store/apps/details?id=com.PyramidCodeStudio.DesertRun",
     code: "",
@@ -77,6 +77,9 @@ const allProjects: Project[] = [
     code: "https://github.com/OmarFahmy03/todo-app-flutter",
     type: "Applications",
   },
+  {
+    src: "/PoseEstimationApp.webp",
+  }
   {
     src: "/QuizApp.webp",
     title: "Quiz App",
