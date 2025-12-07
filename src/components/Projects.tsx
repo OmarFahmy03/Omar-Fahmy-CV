@@ -8,7 +8,7 @@ interface Project {
   description: string;
   link: string;
   code: string;
-  type: "Games" | "AI" | "Applications";
+  type: "Games" | "AI" | "Applications" | "3D";
 };
 
 // projects data
@@ -76,6 +76,14 @@ const allProjects: Project[] = [
     link: "",
     code: "https://github.com/OmarFahmy03/todo-app-flutter",
     type: "Applications",
+  },
+  {
+    src: "/Laboratory.webp",
+    title: "Laboratory",
+    description: "A High-poly realistic 3D Lab Envioronment Designed, Built, and Published by me",
+    link: "https://drive.google.com/drive/folders/1Qc154r6YorvXL9Ex_PN80JJc4Ns4qj7Y?usp=sharing",
+    code: "",
+    type: "3D",
   },
   {
     src: "/QuizApp.webp",
