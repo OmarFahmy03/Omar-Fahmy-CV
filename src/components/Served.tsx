@@ -37,7 +37,7 @@ const Served: React.FC = () => {
                 <CountUp
                   className="text-4xl p-1 font-bold"
                   start={0}
-                  end={23}
+                  end={25}
                   duration={3}
                   separator=","
                 />
@@ -58,7 +58,7 @@ const Served: React.FC = () => {
                 <CountUp
                   className="text-4xl p-1 font-bold"
                   start={0}
-                  end={27}
+                  end={29}
                   duration={1}
                   separator=","
                 />
