@@ -103,7 +103,7 @@ const allProjects: Project[] = [
   }
 ];
 
-const filterTypes = ["All", "Games", "AI", "Applications"] as const;
+const filterTypes = ["All", "Games", "AI", "Applications", "3D"] as const;
 
 // Projects component
 // This component displays a list of projects with filtering options and a horizontal scroll feature.
